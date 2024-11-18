@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1B7F76F42CB96C7B00A409A3 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7F76F32CB96C7B00A409A3 /* OpenGL.framework */; };
+		1B7F76F62CB96C9100A409A3 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7F76F52CB96C9100A409A3 /* GLUT.framework */; };
+		1B9BFE0F2CC5A1DB0058994D /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9BFE0E2CC5A1DB0058994D /* OpenAL.framework */; };
+		1B9BFE112CC5A1F20058994D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9BFE102CC5A1F20058994D /* AudioToolbox.framework */; };
+		1B9BFE152CC5A2330058994D /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9BFE142CC5A2330058994D /* CoreFoundation.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		1B7F76E62CB96BFF00A409A3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -20,6 +28,12 @@
 
 /* Begin PBXFileReference section */
 		1B7F76E82CB96BFF00A409A3 /* GraphicProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GraphicProject; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B7F76F32CB96C7B00A409A3 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		1B7F76F52CB96C9100A409A3 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		1B9BFE0E2CC5A1DB0058994D /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		1B9BFE102CC5A1F20058994D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1B9BFE122CC5A2000058994D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		1B9BFE142CC5A2330058994D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -35,6 +49,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B9BFE152CC5A2330058994D /* CoreFoundation.framework in Frameworks */,
+				1B9BFE112CC5A1F20058994D /* AudioToolbox.framework in Frameworks */,
+				1B9BFE0F2CC5A1DB0058994D /* OpenAL.framework in Frameworks */,
+				1B7F76F42CB96C7B00A409A3 /* OpenGL.framework in Frameworks */,
+				1B7F76F62CB96C9100A409A3 /* GLUT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				1B7F76EA2CB96BFF00A409A3 /* GraphicProject */,
+				1B7F76F22CB96C7A00A409A3 /* Frameworks */,
 				1B7F76E92CB96BFF00A409A3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +75,19 @@
 				1B7F76E82CB96BFF00A409A3 /* GraphicProject */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1B7F76F22CB96C7A00A409A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B9BFE142CC5A2330058994D /* CoreFoundation.framework */,
+				1B9BFE122CC5A2000058994D /* CFNetwork.framework */,
+				1B9BFE102CC5A1F20058994D /* AudioToolbox.framework */,
+				1B9BFE0E2CC5A1DB0058994D /* OpenAL.framework */,
+				1B7F76F52CB96C9100A409A3 /* GLUT.framework */,
+				1B7F76F32CB96C7B00A409A3 /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +162,7 @@
 		1B7F76ED2CB96BFF00A409A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -182,6 +215,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -190,7 +224,7 @@
 		1B7F76EE2CB96BFF00A409A3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -237,6 +271,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
 				SDKROOT = macosx;
 			};
 			name = Release;
